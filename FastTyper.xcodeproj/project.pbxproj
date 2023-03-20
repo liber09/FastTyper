@@ -49,6 +49,7 @@
 		5CEECEB529C8F64F00139F2C /* FastTyperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastTyperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEECEB929C8F64F00139F2C /* FastTyperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTyperUITests.swift; sourceTree = "<group>"; };
 		5CEECEBB29C8F64F00139F2C /* FastTyperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTyperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5CEECEC929C90A6A00139F2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +302,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5CEECE9F29C8F64D00139F2C /* Base */,
+				5CEECEC929C90A6A00139F2C /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

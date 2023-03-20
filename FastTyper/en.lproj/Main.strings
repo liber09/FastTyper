@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Welcome to"; ObjectID = "1pi-hb-u8e"; */
+"1pi-hb-u8e.text" = "Welcome to";
+
+/* Class = "UIButton"; configuration.title = "Start game"; ObjectID = "GDV-03-B1D"; */
+"GDV-03-B1D.configuration.title" = "Start game";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GDV-03-B1D"; */
+"GDV-03-B1D.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "FastTyper"; ObjectID = "R2w-Gz-k3K"; */
+"R2w-Gz-k3K.text" = "FastTyper";
+
+/* Class = "UISegmentedControl"; YGm-xY-LTz.segmentTitles[0] = "5 seconds"; ObjectID = "YGm-xY-LTz"; */
+"YGm-xY-LTz.segmentTitles[0]" = "5 seconds";
+
+/* Class = "UISegmentedControl"; YGm-xY-LTz.segmentTitles[1] = "4 seconds"; ObjectID = "YGm-xY-LTz"; */
+"YGm-xY-LTz.segmentTitles[1]" = "4 seconds";
+
+/* Class = "UISegmentedControl"; YGm-xY-LTz.segmentTitles[2] = "3 seconds"; ObjectID = "YGm-xY-LTz"; */
+"YGm-xY-LTz.segmentTitles[2]" = "3 seconds";
+
+/* Class = "UIButton"; configuration.title = "Show highscore"; ObjectID = "yKo-dK-OG0"; */
+"yKo-dK-OG0.configuration.title" = "Show highscore";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "yKo-dK-OG0"; */
+"yKo-dK-OG0.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Select difficulty"; ObjectID = "zv2-6h-n2O"; */
+"zv2-6h-n2O.text" = "Select difficulty";
