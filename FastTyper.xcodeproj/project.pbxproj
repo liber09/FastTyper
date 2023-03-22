@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5C74957729C969180070A490 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C74957629C969180070A490 /* Game.storyboard */; };
+		5C74957B29CAAAEA0070A490 /* HowToPlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C74957A29CAAAEA0070A490 /* HowToPlay.storyboard */; };
+		5C74957D29CAAF050070A490 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C74957C29CAAF050070A490 /* GameViewController.swift */; };
+		5C74957F29CAB6560070A490 /* HighscoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C74957E29CAB6560070A490 /* HighscoreViewController.swift */; };
+		5C74958129CAB98A0070A490 /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C74958029CAB98A0070A490 /* HowToPlayViewController.swift */; };
+		5C74958529CABA860070A490 /* Highscore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C74958429CABA860070A490 /* Highscore.storyboard */; };
 		5CEECE9929C8F64D00139F2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECE9829C8F64D00139F2C /* AppDelegate.swift */; };
 		5CEECE9B29C8F64D00139F2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECE9A29C8F64D00139F2C /* SceneDelegate.swift */; };
-		5CEECE9D29C8F64D00139F2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECE9C29C8F64D00139F2C /* ViewController.swift */; };
+		5CEECE9D29C8F64D00139F2C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECE9C29C8F64D00139F2C /* MainViewController.swift */; };
 		5CEECEA029C8F64D00139F2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CEECE9E29C8F64D00139F2C /* Main.storyboard */; };
 		5CEECEA229C8F64F00139F2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CEECEA129C8F64F00139F2C /* Assets.xcassets */; };
 		5CEECEA529C8F64F00139F2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CEECEA329C8F64F00139F2C /* LaunchScreen.storyboard */; };
@@ -38,10 +43,15 @@
 
 /* Begin PBXFileReference section */
 		5C74957629C969180070A490 /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
+		5C74957A29CAAAEA0070A490 /* HowToPlay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HowToPlay.storyboard; sourceTree = "<group>"; };
+		5C74957C29CAAF050070A490 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = FastTyper/Controllers/GameViewController.swift; sourceTree = SOURCE_ROOT; };
+		5C74957E29CAB6560070A490 /* HighscoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoreViewController.swift; sourceTree = "<group>"; };
+		5C74958029CAB98A0070A490 /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
+		5C74958429CABA860070A490 /* Highscore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Highscore.storyboard; sourceTree = "<group>"; };
 		5CEECE9529C8F64D00139F2C /* FastTyper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastTyper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEECE9829C8F64D00139F2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CEECE9A29C8F64D00139F2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5CEECE9C29C8F64D00139F2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CEECE9C29C8F64D00139F2C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5CEECE9F29C8F64D00139F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CEECEA129C8F64F00139F2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CEECEA429C8F64F00139F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,6 +95,8 @@
 				5CEECEA329C8F64F00139F2C /* LaunchScreen.storyboard */,
 				5CEECE9E29C8F64D00139F2C /* Main.storyboard */,
 				5C74957629C969180070A490 /* Game.storyboard */,
+				5C74957A29CAAAEA0070A490 /* HowToPlay.storyboard */,
+				5C74958429CABA860070A490 /* Highscore.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -92,7 +104,10 @@
 		5C74957929C96FE70070A490 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5CEECE9C29C8F64D00139F2C /* ViewController.swift */,
+				5C74957C29CAAF050070A490 /* GameViewController.swift */,
+				5CEECE9C29C8F64D00139F2C /* MainViewController.swift */,
+				5C74957E29CAB6560070A490 /* HighscoreViewController.swift */,
+				5C74958029CAB98A0070A490 /* HowToPlayViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -252,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C74957729C969180070A490 /* Game.storyboard in Resources */,
+				5C74958529CABA860070A490 /* Highscore.storyboard in Resources */,
+				5C74957B29CAAAEA0070A490 /* HowToPlay.storyboard in Resources */,
 				5CEECEA529C8F64F00139F2C /* LaunchScreen.storyboard in Resources */,
 				5CEECEA229C8F64F00139F2C /* Assets.xcassets in Resources */,
 				5CEECEA029C8F64D00139F2C /* Main.storyboard in Resources */,
@@ -279,8 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CEECE9D29C8F64D00139F2C /* ViewController.swift in Sources */,
+				5C74957D29CAAF050070A490 /* GameViewController.swift in Sources */,
+				5CEECE9D29C8F64D00139F2C /* MainViewController.swift in Sources */,
+				5C74958129CAB98A0070A490 /* HowToPlayViewController.swift in Sources */,
 				5CEECE9929C8F64D00139F2C /* AppDelegate.swift in Sources */,
+				5C74957F29CAB6560070A490 /* HighscoreViewController.swift in Sources */,
 				5CEECE9B29C8F64D00139F2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
