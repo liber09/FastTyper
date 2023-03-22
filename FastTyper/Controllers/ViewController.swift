@@ -17,8 +17,7 @@ class ViewController: UIViewController {
     @IBAction func startGame(_ sender: Any) {
         let gameStoryboard = UIStoryboard(name: "Game",bundle: nil)
         let vc = storyboard?.instantiateViewController(withIdentifier: "main")
-        present(vc, animated: true, completion: nil)
+        present(vc!, animated: true, completion: nil)
     }
-    
 }
 
