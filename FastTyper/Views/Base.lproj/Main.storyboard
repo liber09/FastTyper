@@ -72,6 +72,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFa-HB-Yjg">
                                 <rect key="frame" x="127.00000000000001" y="339" width="139.33333333333337" height="34.333333333333314"/>
                                 <buttonConfiguration key="configuration" style="plain" title="How to play"/>
+                                <connections>
+                                    <action selector="SHowHowToPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCx-5G-Iln"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pi-hb-u8e">
                                 <rect key="frame" x="108.00000000000001" y="66" width="177.33333333333337" height="42"/>

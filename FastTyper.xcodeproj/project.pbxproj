@@ -14,6 +14,7 @@
 		5C74958129CAB98A0070A490 /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C74958029CAB98A0070A490 /* HowToPlayViewController.swift */; };
 		5C74958529CABA860070A490 /* Highscore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C74958429CABA860070A490 /* Highscore.storyboard */; };
 		5C74958A29CABCA20070A490 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C74958929CABCA20070A490 /* words.json */; };
+		5C74958C29CABFB20070A490 /* word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C74958B29CABFB20070A490 /* word.swift */; };
 		5CEECE9929C8F64D00139F2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECE9829C8F64D00139F2C /* AppDelegate.swift */; };
 		5CEECE9B29C8F64D00139F2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECE9A29C8F64D00139F2C /* SceneDelegate.swift */; };
 		5CEECE9D29C8F64D00139F2C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECE9C29C8F64D00139F2C /* MainViewController.swift */; };
@@ -50,6 +51,7 @@
 		5C74958029CAB98A0070A490 /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
 		5C74958429CABA860070A490 /* Highscore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Highscore.storyboard; sourceTree = "<group>"; };
 		5C74958929CABCA20070A490 /* words.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		5C74958B29CABFB20070A490 /* word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = word.swift; sourceTree = "<group>"; };
 		5CEECE9529C8F64D00139F2C /* FastTyper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastTyper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEECE9829C8F64D00139F2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CEECE9A29C8F64D00139F2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +119,7 @@
 		5C74958629CABB450070A490 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5C74958929CABCA20070A490 /* words.json */,
+				5C74958B29CABFB20070A490 /* word.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,6 +152,7 @@
 				5C74957829C96FC80070A490 /* Views */,
 				5CEECE9829C8F64D00139F2C /* AppDelegate.swift */,
 				5CEECE9A29C8F64D00139F2C /* SceneDelegate.swift */,
+				5C74958929CABCA20070A490 /* words.json */,
 				5CEECEA129C8F64F00139F2C /* Assets.xcassets */,
 				5CEECEA629C8F64F00139F2C /* Info.plist */,
 			);
@@ -313,6 +316,7 @@
 				5C74958129CAB98A0070A490 /* HowToPlayViewController.swift in Sources */,
 				5CEECE9929C8F64D00139F2C /* AppDelegate.swift in Sources */,
 				5C74957F29CAB6560070A490 /* HighscoreViewController.swift in Sources */,
+				5C74958C29CABFB20070A490 /* word.swift in Sources */,
 				5CEECE9B29C8F64D00139F2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

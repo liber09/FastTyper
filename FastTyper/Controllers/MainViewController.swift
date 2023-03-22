@@ -19,5 +19,8 @@ class ViewController: UIViewController {
         let vc = gameStoryboard.instantiateViewController(withIdentifier: "GameViewController")
         present(vc, animated: true, completion: nil)
     }
+    
+    @IBAction func ShowHowToPlay(_ sender: Any) {
+    }
 }
 
