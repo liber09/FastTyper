@@ -4,6 +4,7 @@ class GameViewController: UIViewController {
 
     var currentWord: String?
     var score = 0;
+    var clock: Clock?
     var selectedDifficulty: Int = 5
     
     @IBOutlet weak var wordToType : UILabel!
@@ -14,6 +15,8 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scoreLabel.text = String(score)
+        clock = Clock(timerLabel: timerLabel)
+        
         let wordList = readLocalJSONFile(forName: "words")
         
     }
