@@ -1,19 +1,23 @@
-//
-//  GameViewController.swift
-//  FastTyper
-//
-//  Created by Linda Bergsängel on 2023-03-22.
-//
-
 import UIKit
 
 class GameViewController: UIViewController {
 
+    var currentWord: String?
+    var score = 0;
+    var selectedDifficulty: Int = 5
+    
+    @IBOutlet weak var wordToType : UILabel!
+
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var timerLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        scoreLabel.text = String(score)
         let wordList = readLocalJSONFile(forName: "words")
+        
     }
+    
     
     func readLocalJSONFile(forName name: String) -> Data? {
         do {
@@ -27,5 +31,7 @@ class GameViewController: UIViewController {
         }
         return nil
     }
-
+    
+    @IBAction func userInput(_ sender: UITextField) {
+    }
 }
