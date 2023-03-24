@@ -6,6 +6,7 @@ class GameViewController: UIViewController {
     var score = 0;
     var clock: Clock?
     var selectedDifficulty: Int = 5
+    var wordList: Array<String>?
     
     @IBOutlet weak var wordToType : UILabel!
 
@@ -16,23 +17,9 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         scoreLabel.text = String(score)
         clock = Clock(timerLabel: timerLabel)
-        
-        let wordList = readLocalJSONFile(forName: "words")
-        
-    }
     
-    
-    func readLocalJSONFile(forName name: String) -> Data? {
-        do {
-            if let filePath = Bundle.main.path(forResource: name, ofType: "json") {
-                let fileUrl = URL(fileURLWithPath: filePath)
-                let data = try Data(contentsOf: fileUrl)
-                return data
-            }
-        } catch {
-            print("error: \(error)")
-        }
-        return nil
+    func setWordToType(){
+        word = wordList.
     }
     
     @IBAction func userInput(_ sender: UITextField) {
