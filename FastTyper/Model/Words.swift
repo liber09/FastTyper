@@ -20,11 +20,14 @@ class Words{
         do {
                 let data = readLocalJSONFile(forName: "words")
             let json = try JSONSerialization.jsonObject(with: data!) as! [[[String: Any]]]
+            addWordsToAllWordList(json)
             }
             catch {
                 print(error)
             }
+        
         }
+    
     func readLocalJSONFile(forName name: String) -> Data? {
         do {
             if let filePath = Bundle.main.path(forResource: name, ofType: "json") {
@@ -36,5 +39,9 @@ class Words{
             print("error: \(error)")
         }
         return nil
+    }
+    
+    func addWordsToAllWordList(json: [[[String: Any]]]){
+        
     }
 }
