@@ -25,10 +25,7 @@ class Clock {
     }
     
     
-    func startTimer(difficulty: Int, wordLength: Int) {
-        let secondsPerLetter = (1.0 - (Double(difficulty) / 100))  * 0.4
-        timeLeft = (Double(wordLength) *  secondsPerLetter) + 2
-        print(wordLength, difficulty, secondsPerLetter, timeLeft)
+    func startTimer(difficulty: Int) {
         setStartTime()
         timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: runTimer(timer:))
         isRunning = true

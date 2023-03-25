@@ -25,6 +25,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="userInput:" destination="uma-OV-UUN" eventType="editingDidEnd" id="ThB-3G-3ie"/>
+                                    <action selector="word:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="K9P-Ub-o60"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdI-T1-7Wn">
@@ -53,6 +54,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="editText" destination="cmn-D0-8y3" id="7ef-fW-M2X"/>
                         <outlet property="scoreLabel" destination="CdI-T1-7Wn" id="Yvm-MR-lXQ"/>
                         <outlet property="timerLabel" destination="l0Y-u8-c26" id="ZsU-Ne-7vc"/>
                         <outlet property="wordToType" destination="EGO-G2-S2f" id="7xv-xh-3CW"/>
