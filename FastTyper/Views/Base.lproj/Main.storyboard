@@ -35,11 +35,14 @@
                                     <segment title="3 seconds"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" systemColor="systemOrangeColor"/>
+                                <connections>
+                                    <action selector="selectDifficulty:" destination="BYZ-38-t0r" eventType="valueChanged" id="BOQ-6N-rzA"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKo-dK-OG0">
                                 <rect key="frame" x="110.00000000000001" y="700" width="171.33333333333337" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="trophy.fill" catalog="system" title="Show highscore">
+                                <buttonConfiguration key="configuration" style="filled" image="trophy" catalog="system" title="Show highscore">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
@@ -71,11 +74,11 @@
                                     <constraint firstAttribute="width" constant="175" id="tBi-XC-gdQ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFa-HB-Yjg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFa-HB-Yjg">
                                 <rect key="frame" x="127.00000000000001" y="339" width="139.33333333333337" height="34.333333333333314"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="How to play"/>
-                                <buttonConfiguration key="configuration" style="filled" title="How to play">
+                                <buttonConfiguration key="configuration" style="filled" image="info.circle" catalog="system" title="How to play">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
@@ -116,6 +119,9 @@
                             <constraint firstItem="1pi-hb-u8e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="z8q-VG-v1S"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="difficulty" destination="YGm-xY-LTz" id="qTc-hP-EZP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,7 +130,8 @@
     </scenes>
     <resources>
         <image name="fast-typer" width="300" height="300"/>
-        <image name="trophy.fill" catalog="system" width="128" height="128"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <image name="trophy" catalog="system" width="128" height="128"/>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
