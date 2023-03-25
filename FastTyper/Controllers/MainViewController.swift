@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     var selectedDifficulty: Int = 0
     let segueIdPlayGame = "startGame"
+    let segueHowToPlay = "howToPlay"
     
     @IBOutlet weak var difficulty: UISegmentedControl!
     
@@ -21,21 +22,18 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startGame(_ sender: Any) {
-        //let gameStoryboard = UIStoryboard(name: "Game",bundle: nil)
-        //let vc = gameStoryboard.instantiateViewController(withIdentifier: "GameViewController")
-        //present(vc, animated: true, completion: nil)
         performSegue(withIdentifier: segueIdPlayGame, sender: self)
         
     }
     
     @IBAction func ShowHowToPlay(_ sender: Any) {
-        let howToPlayStoryboard = UIStoryboard(name: "HowToPlay",bundle: nil)
-        let howToVc = howToPlayStoryboard.instantiateViewController(withIdentifier: "HowToPlayViewController")
-        present(howToVc, animated: true, completion: nil)
+        performSegue(withIdentifier: segueHowToPlay, sender: self)
     }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            
+        if segue.identifier == segueHowToPlay{
+            guard let howToPlayViewController = segue.destination as? HowToPlayViewController else { return }
+        }
             guard let gameViewController = segue.destination as? GameViewController else { return }
               gameViewController.selectedDifficulty = selectedDifficulty
                 

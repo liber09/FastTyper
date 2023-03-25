@@ -84,7 +84,8 @@
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="SHowHowToPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCx-5G-Iln"/>
+                                    <action selector="ShowHowToPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I8U-n0-0eE"/>
+                                    <segue destination="qJ8-QG-u4L" kind="showDetail" identifier="howToPlay" id="GF6-3o-t4a"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pi-hb-u8e">
@@ -127,6 +128,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+        <!--HowToPlayViewController-->
+        <scene sceneID="mnY-Rw-jxI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HowToPlay" referencedIdentifier="HowToPlayViewController" id="qJ8-QG-u4L" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hQc-26-okp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDv-59-zud" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="-72"/>
         </scene>
         <!--GameViewController-->
         <scene sceneID="6dl-dM-cMr">
