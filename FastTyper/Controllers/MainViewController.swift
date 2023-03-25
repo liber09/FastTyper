@@ -10,18 +10,22 @@ import UIKit
 class ViewController: UIViewController {
 
     var selectedDifficulty: Int = 0
+    let segueIdPlayGame = "startGame"
     
     @IBOutlet weak var difficulty: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
-
+    
     @IBAction func startGame(_ sender: Any) {
-        let gameStoryboard = UIStoryboard(name: "Game",bundle: nil)
-        let vc = gameStoryboard.instantiateViewController(withIdentifier: "GameViewController")
-        present(vc, animated: true, completion: nil)
+        //let gameStoryboard = UIStoryboard(name: "Game",bundle: nil)
+        //let vc = gameStoryboard.instantiateViewController(withIdentifier: "GameViewController")
+        //present(vc, animated: true, completion: nil)
+        performSegue(withIdentifier: segueIdPlayGame, sender: self)
+        
     }
     
     @IBAction func ShowHowToPlay(_ sender: Any) {
@@ -32,10 +36,10 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            
-            if let gameViewController = segue.destination as? GameViewController{
+            guard let gameViewController = segue.destination as? GameViewController else { return }
               gameViewController.selectedDifficulty = selectedDifficulty
                 
-            }
+            
         }
     
     @IBAction func selectDifficulty(_ sender: UISegmentedControl) {
