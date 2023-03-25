@@ -10,29 +10,29 @@ class WordsList {
     }
     
     //Get any word no matter length
-    func getRandomWord() -> Words {
+    func getRandomWord() -> String {
             let randm = Int.random(in: 0..<words.count)
-            return words[randm]
+        return words[randm].word
         }
     
     //Get word by difficulty.
-    func getRandomWordByDifficulty(difficulty: String) -> Words{
+    func getRandomWordByDifficulty(difficulty: String) -> String{
         
         switch difficulty{
         case "5":
             let shortWords = words.filter { $0.word.count <= 5 }
             let rnd = Int.random(in: 0..<shortWords.count)
-            return shortWords[rnd]
+            return shortWords[rnd].word
             
         case "4":
             let mediumWords = words.filter { $0.word.count > 6 && $0.word.count <= 8  }
             let rnd = Int.random(in: 0..<mediumWords.count)
-            return mediumWords[rnd]
+            return mediumWords[rnd].word
             
         case "3":
             let longWords = words.filter {  $0.word.count > 8  }
             let rnd = Int.random(in: 0..<longWords.count)
-            return longWords[rnd]
+            return longWords[rnd].word
             
         default:
             return getRandomWord()

@@ -1,15 +1,15 @@
 import UIKit
 
 class GameViewController: UIViewController {
-
+    
     var currentWord: String?
     var score = 0;
     var clock: Clock?
     var selectedDifficulty: Int = 5
-    var wordList: Array<String>?
+    var wordslist = WordsList()
     
     @IBOutlet weak var wordToType : UILabel!
-
+    
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     
@@ -17,11 +17,13 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         scoreLabel.text = String(score)
         clock = Clock(timerLabel: timerLabel)
-    
-    func setWordToType(){
-        word = wordList.
+        setWordToType()
+        
+        
     }
     
-    @IBAction func userInput(_ sender: UITextField) {
+    func setWordToType(){
+        let word = wordslist.getRandomWord()
+        wordToType.text = word
     }
 }
