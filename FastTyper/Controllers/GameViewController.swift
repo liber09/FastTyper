@@ -15,6 +15,15 @@ class GameViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        scoreLabel.text = String(score)
+        timerLabel.text = String(0)
+        wordToType.text = "This is the word you should write"
+        clock?.startTimer(difficulty: selectedDifficulty)
+        setWordToType()
+    }
+    
     @IBAction func word(_ sender: UITextField) {
         if editText.text == currentWord{
             score+=1
@@ -23,12 +32,6 @@ class GameViewController: UIViewController {
             setWordToType()
             
         }
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        scoreLabel.text = String(score)
-        clock?.startTimer(difficulty: selectedDifficulty)
-        setWordToType()
     }
     
     func setWordToType(){
