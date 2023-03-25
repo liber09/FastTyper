@@ -1,47 +1,41 @@
-//
-//  Words.swift
-//  FastTyper
-//
-//  Created by Linda Bergsängel on 2023-03-24.
-//
-
 import Foundation
 
-class Words{
+class Words {
     
-    private var allWords:[Int: [String]] = [:]
-    private var wordList = [String]()
-    private var difficulty: Int
+    private var words = [Words]()
     
-    init(level: Int){
-        difficulty = level
-        
-        let jsonData = readLocalJSONFile(forName: "words")
-        do {
-                let data = readLocalJSONFile(forName: "words")
-            let json = try JSONSerialization.jsonObject(with: data!) as! [[[String: Any]]]
-            addWordsToAllWordList(json)
-            }
-            catch {
-                print(error)
-            }
-        
-        }
-    
-    func readLocalJSONFile(forName name: String) -> Data? {
-        do {
-            if let filePath = Bundle.main.path(forResource: name, ofType: "json") {
-                let fileUrl = URL(fileURLWithPath: filePath)
-                let data = try Data(contentsOf: fileUrl)
-                return data
-            }
-        } catch {
-            print("error: \(error)")
-        }
-        return nil
+    init(){
+        let gameWords = ["cars", "beach", "treehouse", "airplane", "helicopter", "road", "banana", "monkey", "elephant", "beach", "ocean", "sofa", "tiger", "chair", "book", "restaurant", "piano", "djungle", "dinosaurs", "towel", "capital", "drawer"]
+        words = gameWords.map{_ in Words}
     }
     
-    func addWordsToAllWordList(json: [[[String: Any]]]){
+    //Get any word no matter length
+    func getRandomWord() -> Words {
+            let randm = Int.random(in: 0..<words.count)
+            return words[randm]
+        }
+    
+    //Get word by difficulty.
+    func getRandomWordByDifficulty(difficulty: String) -> Words{
         
+        switch difficulty{
+        case "5":
+            let shortWords = words.filter { $0.word.count <= 5 }
+            let rnd = Int.random(in: 0..<shortWords.count)
+            return shortWords[rnd]
+            
+        case "4":
+            let mediumWords = words.filter { $0.word.count > 6 && $0.word.count <= 8  }
+            let rnd = Int.random(in: 0..<mediumWords.count)
+            return mediumWords[rnd]
+            
+        case "3":
+            let longWords = words.filter {  $0.word.count > 8  }
+            let rnd = Int.random(in: 0..<longWords.count)
+            return longWordsvvvvvvv[rnd]
+            
+        default:
+            return getRandomWord()
+        }
     }
 }
