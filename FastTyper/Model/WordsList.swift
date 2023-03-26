@@ -16,20 +16,20 @@ class WordsList {
         }
     
     //Get word by difficulty.
-    func getRandomWordByDifficulty(difficulty: String) -> String{
+    func getRandomWordByDifficulty(difficulty: Int) -> String{
         
         switch difficulty{
-        case "5":
+        case 5:
             let shortWords = words.filter { $0.word.count <= 5 }
             let rnd = Int.random(in: 0..<shortWords.count)
             return shortWords[rnd].word
             
-        case "4":
+        case 4:
             let mediumWords = words.filter { $0.word.count > 6 && $0.word.count <= 8  }
             let rnd = Int.random(in: 0..<mediumWords.count)
             return mediumWords[rnd].word
             
-        case "3":
+        case 3:
             let longWords = words.filter {  $0.word.count > 8  }
             let rnd = Int.random(in: 0..<longWords.count)
             return longWords[rnd].word

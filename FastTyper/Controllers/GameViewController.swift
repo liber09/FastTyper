@@ -19,7 +19,6 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         scoreLabel.text = String(score)
         timerLabel.text = String(0)
-        wordToType.text = "This is the word you should write"
         clock?.startTimer(difficulty: selectedDifficulty)
         setWordToType()
         
@@ -37,7 +36,7 @@ class GameViewController: UIViewController {
     }
     
     func setWordToType(){
-        currentWord = wordslist.getRandomWord()
+        currentWord = wordslist.getRandomWordByDifficulty(difficulty: selectedDifficulty)
         wordToType.text = currentWord
     }
     
