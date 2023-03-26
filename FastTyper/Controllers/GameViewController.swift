@@ -22,9 +22,11 @@ class GameViewController: UIViewController {
         wordToType.text = "This is the word you should write"
         clock?.startTimer(difficulty: selectedDifficulty)
         setWordToType()
+        
+        editText.addTarget(self, action: #selector(checkWord), for: .editingChanged)
     }
     
-    @IBAction func word(_ sender: UITextField) {
+    @IBAction func checkWord(_ sender: UITextField) {
         if editText.text == currentWord{
             score+=1
             scoreLabel.text = String(score)
