@@ -17,12 +17,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zu-lK-kHd">
-                                <rect key="frame" x="16" y="171" width="355" height="221"/>
+                                <rect key="frame" x="16" y="171" width="355" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Begin with selecting a difficulty. How many seconds to write the word. 5 seconds have wordlength of 5 or shorter. 4 seconds has wordlenght of 6-8 letters and 3 seconds has words longer than 8 letters. You get new seconds for each word you manage to write. When time is up, game is over.</string>
+                                        <string key="content">Begin with selecting a difficulty.       How many seconds to write the word.      5 seconds have wordlength of 5 or shorter. 4 seconds has wordlenght of 6-8 letters and 3 seconds has words longer than 8 letters.                                          You get new seconds for each word you manage to write.                                                  When time is up, game is over.</string>
                                         <attributes>
                                             <color key="NSColor" systemColor="labelColor"/>
                                             <font key="NSFont" metaFont="system" size="20"/>
