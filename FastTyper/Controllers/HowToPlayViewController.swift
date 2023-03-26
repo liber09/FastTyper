@@ -26,4 +26,7 @@ class HowToPlayViewController: UIViewController {
     }
     */
 
+    @IBAction func GoBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
