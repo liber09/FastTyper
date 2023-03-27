@@ -18,16 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select difficulty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zv2-6h-n2O">
-                                <rect key="frame" x="4" y="571" width="385" height="21"/>
+                                <rect key="frame" x="4" y="606.33333333333337" width="385" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="uX3-b4-GKL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YGm-xY-LTz">
-                                <rect key="frame" x="32" y="600" width="328" height="32"/>
+                                <rect key="frame" x="32" y="635.33333333333337" width="328" height="32"/>
                                 <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                 <segments>
                                     <segment title="5 seconds"/>
@@ -39,16 +39,20 @@
                                     <action selector="selectDifficulty:" destination="BYZ-38-t0r" eventType="valueChanged" id="BOQ-6N-rzA"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKo-dK-OG0">
-                                <rect key="frame" x="110.00000000000001" y="700" width="171.33333333333337" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKo-dK-OG0">
+                                <rect key="frame" x="97" y="735" width="208" height="70"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="trophy" catalog="system" title="Show highscore">
+                                    <fontDescription key="titleFontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="zc8-25-mAo" kind="showDetail" id="OiY-w0-TXg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDV-03-B1D">
-                                <rect key="frame" x="118" y="400" width="156.66666666666663" height="116"/>
+                                <rect key="frame" x="109" y="400" width="175" height="116"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="116" id="BWF-z0-lWw"/>
                                 </constraints>
@@ -58,7 +62,7 @@
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <color key="strokeColor" systemColor="systemOrangeColor"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <fontDescription key="titleFontDescription" name="Papyrus" family="Papyrus" pointSize="28"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -75,11 +79,12 @@
                                     <constraint firstAttribute="width" constant="175" id="tBi-XC-gdQ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFa-HB-Yjg">
-                                <rect key="frame" x="127.00000000000001" y="339" width="139.33333333333337" height="34.333333333333314"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFa-HB-Yjg">
+                                <rect key="frame" x="109" y="339" width="175" height="34"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="How to play"/>
                                 <buttonConfiguration key="configuration" style="filled" image="info.circle" catalog="system" title="How to play">
+                                    <fontDescription key="titleFontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
@@ -88,9 +93,9 @@
                                     <segue destination="qJ8-QG-u4L" kind="showDetail" identifier="howToPlay" id="GF6-3o-t4a"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pi-hb-u8e">
-                                <rect key="frame" x="108.00000000000001" y="66" width="177.33333333333337" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pi-hb-u8e">
+                                <rect key="frame" x="32" y="66" width="328" height="57"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -148,6 +153,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJP-4u-g0R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928" y="-35"/>
+        </scene>
+        <!--HighscoreViewController-->
+        <scene sceneID="8KO-Ea-tQb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Highscore" referencedIdentifier="HighscoreViewController" id="zc8-25-mAo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5C-Gc-F5Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875" y="11"/>
         </scene>
     </scenes>
     <resources>
