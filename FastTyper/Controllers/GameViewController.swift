@@ -17,8 +17,11 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if clock == nil {
+            clock = Clock(timerLabel: timerLabel)
+        }
         scoreLabel.text = String(score)
-        timerLabel.text = String(0)
+        timerLabel.text = String(selectedDifficulty)
         clock?.startTimer(difficulty: selectedDifficulty)
         setWordToType()
         

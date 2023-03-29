@@ -24,11 +24,12 @@ class Clock {
     
     func startTimer(difficulty: Int) {
         time = difficulty
-        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: runTimer(timer:))
+        timerLabel.text = String(time)
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: runTimer(timer:))
         isRunning = true
         }
     
-    func runTimer(timer : Timer) {
+    @objc func runTimer(timer : Timer) {
         if time < 1 {
             timer.invalidate()
             isRunning = false
